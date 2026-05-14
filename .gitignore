@@ -1,0 +1,20 @@
+# Rust
+target/
+**/*.rs.bk
+*.pdb
+
+# C
+*.o
+*.out
+*.exe
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
