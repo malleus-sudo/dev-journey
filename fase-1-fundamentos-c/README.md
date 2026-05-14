@@ -10,40 +10,37 @@ O objetivo dessa fase é dominar a lógica de programação e a linguagem C que 
 
 ## Progresso
 - Primeira Parte: Basic Features of C
-     1. Introducing C               [x]
-     2. C Fundamentals              [ ]
-     3. Formatted Input/Output      [ ]
-     4. Expressions                 [ ]
-     5. Selection Statements        [ ]
-     6. Loops                       [ ]
-     7. Basic Types                 [ ]
-     8. Arrays                      [ ]
-     9. Functions                   [ ]
-    10. Program Organization        [ ]
+    - [x] Introducing C               
+    - [ ] C Fundamentals              
+    - [ ] Formatted Input/Output      
+    - [ ] Expressions                 
+    - [ ] Selection Statements        
+    - [ ] Loops                       
+    - [ ] Basic Types                 
+    - [ ] Arrays                      
+    - [ ] Functions                   
+    - [ ] Program Organization        
 
 - Segunda Parte: Advanced Features of C
-    11. Pointers                    [ ]
-    12. Pointer and Arrays          [ ]
-    13. Strings                     [ ]
-    14. The Processor               [ ]
-    15. Writing Large Programs      [ ]
-    16. Structure, Unions and
-        Enumerations                [ ]
-    17. Advanced Uses of Pointers   [ ]
-    18. Declarations                [ ]
-    19. Program Design              [ ]
-    20. Low-Level Programming       [ ]
+    - [ ] Pointers                    
+    - [ ] Pointer and Arrays          
+    - [ ] Strings                     
+    - [ ] The Processor               
+    - [ ] Writing Large Programs      
+    - [ ] Structure, Unions and Enumerations                
+    - [ ] Advanced Uses of Pointers   
+    - [ ] Declarations                
+    - [ ] Program Design              
+    - [ ] Low-Level Programming       
 
 - Terceira Parte: The Standard C Library
-    21. The Standard Library        [ ]
-    22. Input/Output
-    23. Library Support for Numbers 
-        and Character Data          [ ]
-    24. Error Handling              [ ]
-    25. International Features      [ ]
-    26. Miscellaneous Library       [ ]
-    27. Additional C99 Support for
-        Mathematics                 [ ]
+    - [ ] The Standard Library       
+    - [ ] Input/Output
+    - [ ] Library Support for Numbers and Character Data         
+    - [ ] Error Handling             
+    - [ ] International Features     
+    - [ ] Miscellaneous Library      
+    - [ ] Additional C99 Support for Mathematics                
 
 ## Projetos
 - [ ] Calculadora
