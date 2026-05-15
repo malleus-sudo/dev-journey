@@ -12,7 +12,7 @@ O objetivo dessa fase é dominar a lógica de programação e a linguagem C que 
 - Primeira Parte: Basic Features of C
     - [x] Introducing C               
     - [x] C Fundamentals              
-    - [ ] Formatted Input/Output      
+    - [x] Formatted Input/Output      
     - [ ] Expressions                 
     - [ ] Selection Statements        
     - [ ] Loops                       
