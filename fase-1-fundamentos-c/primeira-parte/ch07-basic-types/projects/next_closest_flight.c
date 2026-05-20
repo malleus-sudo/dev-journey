@@ -1,5 +1,5 @@
 /***********************************************************************************************
- * Asks the user to enter a time (expressed in hours and minutes, using the 24-                *
+ * Asks the user to enter a time (expressed in hours and minutes, using the 12-                *
  * hour clock). The program then displays the departure and arrival times for the flight whose *
  * departure time is closest to that entered by the user.                                      * 
  ***********************************************************************************************/
