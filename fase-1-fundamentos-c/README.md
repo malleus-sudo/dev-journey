@@ -16,7 +16,7 @@ O objetivo dessa fase é dominar a lógica de programação e a linguagem C que 
     - [x] Expressions                 
     - [x] Selection Statements        
     - [x] Loops                       
-    - [ ] Basic Types                 
+    - [x] Basic Types                 
     - [ ] Arrays                      
     - [ ] Functions                   
     - [ ] Program Organization        
@@ -43,5 +43,4 @@ O objetivo dessa fase é dominar a lógica de programação e a linguagem C que 
     - [ ] Additional C99 Support for Mathematics                
 
 ## Projetos
-- [ ] Calculadora
-- [ ] Jogo da Forca
+- [x] Calculadora
