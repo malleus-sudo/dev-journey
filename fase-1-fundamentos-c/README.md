@@ -44,3 +44,5 @@ O objetivo dessa fase é dominar a lógica de programação e a linguagem C que 
 
 ## Projetos
 - [x] Calculadora
+- [ ] Calculadora de determinantes
+- [ ] Solução de sistemas lineares - Método de Gauss-Jordan
