@@ -1,6 +1,7 @@
 /* Counts the number of vowels (a, e, i, o and u) in a sentence */
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main(void)
 {

@@ -1,6 +1,7 @@
 /* Aks the user for a 12-hour time, then displays the time in 24-hout form */
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main(void)
 {
