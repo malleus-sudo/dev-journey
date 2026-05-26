@@ -1,4 +1,4 @@
-/* Prints a table of compound interest */
+/* Prints a table of compound interest computed monthly */
 
 #include <stdio.h>
 
@@ -25,7 +25,10 @@ int main(void)
     for (year = 1; year <= num_years; year++) {
         printf ("%3d    ", year);
         for (i = 0; i < NUM_RATES; i++) {
-            value[i] += (low_rate + i) / 100.0 * value[i];
+            double monthly_rate = ((double) low_rate + i) / 100.0 / 12.0;
+
+            for (short month = 0; month < 12; month++)
+                value[i] *= (1.0 + monthly_rate);
             printf("%7.2f", value[i]);
         }
         printf("\n");
