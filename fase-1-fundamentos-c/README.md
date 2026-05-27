@@ -17,7 +17,7 @@ O objetivo dessa fase é dominar a lógica de programação e a linguagem C que 
     - [x] Selection Statements        
     - [x] Loops                       
     - [x] Basic Types                 
-    - [ ] Arrays                      
+    - [x] Arrays                      
     - [ ] Functions                   
     - [ ] Program Organization        
 
