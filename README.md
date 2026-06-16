@@ -1,6 +1,6 @@
 # Dev Journey
 
-Registro da minha jornada para me tornar um desenvolvedor completo de forma autodidata com base em livros e projetos, utilizando um plano de estudos em fases.
+Registro dos meus estudos em desenvolvimento com base em livros e projetos, utilizando um plano de estudos em fases. Em última instância, será voltado para criar ferramentas para projetos de Física embora também haja previsão de projetos mais diversificados por questões de aprendizado. Na Física usa-se muito python, mas eu não gosto muito principalmente quando há a necessidade de fazer simulações mais complexas.
 
 ## Ferramentas de desenvolvimento
 - OS: Arch Linux
