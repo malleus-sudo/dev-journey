@@ -22,72 +22,60 @@ int main(void)
     int turn = 0, wins = 0, losses = 0, point = 0;
     printf("Welcome to the craps game!\n\n");
 
+    srand((unsigned)time(NULL));
+
     while(true) {
         int roll = roll_dice();
         printf("You rolled: %d\n", roll);
         
-        if (turn == 0 && (roll == 7 || roll == 11)) {
+        if (turn == 0) {
+            if (roll == 7 || roll == 11) {
             printf("You win!\n");
             wins++;
+            } else if (roll == 2 || roll == 3 || roll == 12) {
+                printf("You lose!\n");
+                losses++;
+            } else {
+                point = roll;
+                printf("Your point is %d\n", point);
+                turn++;
+                continue;
+            }
 
             printf("Play again? ");
             if (!play_game()) {
                 printf("Wins: %d  Losses: %d\n", wins, losses);
                 return 0;
             }
-            else 
-                turn = 0;
+               
+            turn = 0;
+            point = 0;
+            continue;
         }
-        else if (turn == 0 && (roll == 2 || roll == 3 || roll == 12)) {
-            printf("You lose!\n");
-            losses++;
+        if (turn > 0) {
+        
+            if (roll == 7) {
+                printf("You lose!\n");
+                losses++;
+            } else if (roll == point) {
+                printf("You win!\n");
+                wins++;
+            } else continue;
 
             printf("Play again? ");
             if (!play_game()) {
-                printf("Wins: %d  Losses: %d\n", wins, losses);
+                printf("Wins: %d Losses: %d\n", wins, losses);
                 return 0;
             }
-            else 
-                turn = 0;
-        }
-        else if (turn == 0) {
-            point = roll;
-            printf("Your point is %d\n", point);
-        }
-        else if (roll == 7) {
-            printf("You lose!\n");
-            losses++;
 
-            printf("Play again? ");
-            if (!play_game()) {
-                printf("Wins: %d  Losses: %d\n", wins, losses);
-                return 0;
-            }
-            else 
-                turn = 0;
+            turn = 0;
+            point = 0;
         }
-        else if (roll == point) {
-            printf("You win!\n");
-            wins++;
-
-            printf("Play again? ");
-            if (play_game() == false) {
-                printf("Wins: %d  Losses: %d\n", wins, losses);
-                return 0;
-            }
-            else 
-                turn = 0;
-        }
-        else continue;
-
-        turn++;
     }
 }
 
 int roll_dice(void)
-{
-    srand((unsigned) time(NULL));
-    
+{    
     int dice1 = (rand() % DICE_SIDES) + 1; // rand() % DICE_SIDES goes from 0 to 5, the + 1 at the end ensure the roll goes from 1 to 6;
     int dice2 = (rand() % DICE_SIDES) + 1;
 
@@ -96,8 +84,10 @@ int roll_dice(void)
 
 bool play_game(void)
 {
-    if (tolower(getchar()) == 'y')
+    if (tolower(getchar()) == 'y') {
+        while (getchar() != '\n'); // clear the input buffer
         return true;
+    }
     else
         return false;
 }
